@@ -2,6 +2,8 @@
 
 https://git-scm.com/doc
 
+add -> commit -> fetch -> pull -> push
+
 ## Getting Start
 ### Configuration
 ```shell
@@ -47,10 +49,72 @@ $ git clone username@host:/path/to/repository
 $ git status
 ```
 
-## Tacking new files
+## Change and Commit 
+#### Tacking new files
 ``` shell
 $ git add <filename>
 ```
 This is the first step in the basic git workflow. To actually commit these changes use.
+#### Staging modified files
+``` shell
+$ git status
+```
+#### View changes
+``` shell
+$ git diff
+```
+#### Commit changes
+``` shell
+$ git commit -m "Commit message"
+```
 
+## Pushing changes
+To send those changes to your remote repository, execute 
+``` shell
+$ git push origin master
+```
 
+If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
+``` shell
+$ git remote add origin <server>
+```
+
+## Branching
+Create a new branch named "new" and switch to it using
+``` shell
+$ git checkout -b new
+```
+
+switch back to master
+``` shell
+$ git checkout master
+```
+
+delete the branch again
+``` shell
+$ git branch -d new
+```
+
+a branch is not available to others unless you push the branch to your remote repository
+``` shell
+$ git push origin <branch>
+```
+## Update && Merge
+To update your locat repository to the newest commit
+``` shell
+$ git pull
+```
+
+To merge another branch into your active branch, use
+``` shell
+$ git merge <branch>
+```
+
+After changing, you need to mark them as merged with
+``` shell
+$ git add <filename>
+```
+before merging changes, you can also preview them by using
+``` shell
+$ git diff <source_branch> <target_branch>
+```
