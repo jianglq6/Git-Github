@@ -2,7 +2,8 @@
 
 https://git-scm.com/doc
 
-add -> commit -> fetch -> pull -> push
+    add     ->     commit    ->     push
+  (workspace)   (stage:local)  (branch: repository)  
 
 ## Getting Start
 ### Configuration
