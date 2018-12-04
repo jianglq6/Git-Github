@@ -119,3 +119,5 @@ before merging changes, you can also preview them by using
 ``` shell
 $ git diff <source_branch> <target_branch>
 ```
+
+如何利用好分支 https://www.zhihu.com/question/21995370
