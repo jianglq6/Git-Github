@@ -8,11 +8,24 @@ Commitizen 可以让你的 commit message 更加规范统一，适合项目团�
 $ sudo npm install -g commitizen
 ```
 
+在项目目录里，运行下面的命令，使其支持Angular的Commit message格式
+``` shell
+$ commitizen init cz-conventional-changelog --save --save-exact
+```
+
+这样，就可以使用``` git cz```来commit。
+
+
 ### 自动生成Change log
 conventional-changelog 是用来从git的元数据中生成 Change log 文档的工具，只要你提交的格式满足它定义的标准，此处以 angular 标准为例子。使用它生成的 Change log 包含以下三个部分：
 - Bug Fixes Bug 修复的信息
 - Features 增加的特性
 - BREAKING CHANGES 重大变更
+
+生成Change Log
+``` shell
+$ npm install conventional-changelog-cli
+```
 
 使用如下：
 ``` shell
