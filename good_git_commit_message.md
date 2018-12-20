@@ -1,7 +1,7 @@
 # 写好Git commit message
 
 ### 使用Commitizen工具
-Commitizen 可以让你的 commit message 更加规范统一，适合项目团队使用，使用也很简单，使用npm安装后，提交代码的时候使用 git cz 去替代以前的 git commit 命令即可。
+Commitizen 可以让你的 commit message 更加规范统一，适合项目团队使用，使用也很简单，使用npm安装后，提交代码的时候使用 ```git cz``` 去替代以前的 ```git commit``` 命令即可。
 
 安装commitizen
 ``` shell
