@@ -13,6 +13,8 @@ $ git config --global user.name "<your.username>"
 ``` shell
 $ git config --global user.email "<your.emal.adderss>"
 ```
+！！！除非你只用一个git账号，如果有公司或者小组账号的话，git有三种配置选项，分别对应--system, --global, --local ！！！
+
 
 ### Getting Help
 ``` shell
